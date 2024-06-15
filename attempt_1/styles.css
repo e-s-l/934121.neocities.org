@@ -1,0 +1,47 @@
+/* ... */
+/* Reset CSS */
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing:border-box;
+}
+
+/* ... */
+/*Resposive image reset*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ... */
+/* Link Style */
+a, a:visited, a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/*...*/
+/* List Style */
+
+ul {
+    list-style: none;
+    width: auto;
+    height: auto;
+}
+
+/* ... */
+
+body {
+    background-color: #abcdef;
+    margin: 2em;;
+    padding: auto;
+    margin-bottom: 250px;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, monospace;
+}
+
+/* ... */
