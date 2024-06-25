@@ -1,0 +1,104 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 2000px;
+}
+
+.container {
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+.cuboid {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+
+}
+
+.face {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid black;
+  background: rgba(255, 255, 255, 0.7);
+  box-sizing: border-box;
+}
+
+.front {
+  width: 300px;
+  height: 200px;
+  transform: translateZ(150px);
+  background-color: #3498db;
+}
+
+.back {
+  width: 300px;
+  height: 200px;
+  transform: translateZ(-150px) rotateY(180deg);
+  background-color: #e74c3c;
+}
+
+.right {
+  width: 300px;
+  height: 200px;
+  transform: rotateY(90deg) translateZ(150px);
+  background-color: #2ecc71;
+}
+
+.left {
+  width: 300px;
+  height: 200px;
+  transform: rotateY(-90deg) translateZ(150px);
+  background-color: #f39c12;
+}
+
+.top {
+  width: 300px;
+  height: 300px;
+  transform: rotateX(90deg) translateY(-0px) translateZ(150px);
+  background-color: #9b59b6;
+}
+
+.bottom {
+  width: 300px;
+  height: 300px;
+  transform: rotateX(-90deg) translateY(0px) translateZ(50px);
+  background-color: #1abc9c;
+}
+
+/*...*/
+
+.controls {
+    margin-top: 200px;
+    padding: 20px;
+}
+
+.controls label {
+    font-size: 18px;
+    margin-right: 10px;
+      display: flex;
+}
+
+label {
+    padding: 10px;
+}
+
+.controls input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
